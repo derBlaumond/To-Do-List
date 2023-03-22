@@ -23,3 +23,24 @@ if(isNaN(age) || age< 0){
 }else{
     console.log("too old to drink")
 }
+
+
+// setting EventListener on window
+function handleWindowCopy(){
+    alert("coppied!");
+}
+function handleWindowOffline(){
+    alert("SOS! No connection!")
+}
+function handleWindowOnline(){
+    alert("Cool! Connected!")
+}
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("online", handleWindowOnline);
+window.addEventListener("offline", handleWindowOffline);
+
+
+// link.addEventListener("click", handleLinkClick);
+// function handleLinkClick(event){
+//   event.preventDefault();
+// } // handleLinkClick({information about the event that just happened})
